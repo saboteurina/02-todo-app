@@ -37,17 +37,11 @@ function show() {
 
     document.getElementById("todos").innerHTML = html;
 
-    // remove button: retrieve all the Remove buttons and iterate over them to add event listeners that invoke the remove method on an individual Remove button, upon click or Enter while focused
+    // remove button: retrieve all the Remove buttons and iterate over them to add event listeners that invoke the remove method on an individual Remove button, upon click or enter
     let removeButtons = document.getElementsByClassName("remove-item");
     for (let i = 0; i < removeButtons.length; i++) {
         removeButtons[i].addEventListener("click", remove);
     }
-    document.addEventListener("keyup", function(event) {
-        if (event.key === "Enter" && event.focus()) {
-            event.preventDefault();
-            remove();
-        }
-    });
 }
 
 // when the user clicks on a remove button, remove it from a new array, set the new array in localStorage and display it
