@@ -1,0 +1,52 @@
+body {
+    font-family: 'Karla', Helvetica, Arial, sans-serif;
+    max-width: 50vmax;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+}
+
+input {
+    padding: 0.6em 2em 0.6em 0.6em;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: -2.5em;
+}
+
+li {
+    padding-top: 2em;
+}
+
+hr {
+    margin-top: 2em;
+}
+
+/* Buttons */
+
+button {
+    border-radius: 4px;
+    padding: 0.75em 2em 0.75em 2em;
+    border-style: none;
+}
+
+button:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+.remove-item {
+    float: right;
+    background-color: #e3e6e9;
+    padding: 0.5em 1em 0.5em 1em;
+    margin: 2em 1em 2em 1em;
+}
+
+#add-todo-item {
+    background-color: #0E2D53;
+    color: #fff;
+    margin-top: 0.75em;
+}
