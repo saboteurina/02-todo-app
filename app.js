@@ -52,6 +52,8 @@ function remove() {
     show();
 }
 
+// show any existing todos first
+show();
 // add item: trigger on click and on enter
 document.addEventListener("keyup", function(event) {
     if (event.key === "Enter") {
